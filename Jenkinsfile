@@ -22,24 +22,24 @@ node('master') {
 					healthy: '', 
 					pattern: '**/build/reports/checkstyle/*.xml', 
 					unHealthy: ''
-		// findbugs 	canComputeNew: false, 
-		// 			defaultEncoding: '', 
-		// 			excludePattern: '', 
-		// 			healthy: '', 
-		// 			includePattern: '', 
-		// 			pattern: '**/build/reports/findbugs/findbugs*.xml', 
-		// 			unHealthy: ''
-		// pmd 	canComputeNew: false, 
-		// 		defaultEncoding: '', 
-		// 		healthy: '', 
-		// 		pattern: '**/build/reports/pmd/*.xml', 
-		// 		unHealthy: ''
-		// dry 	canComputeNew: false, 
-		// 		defaultEncoding: '', 
-		// 		healthy: '', 
-		// 		pattern: '**/build/reports/pmd/cpd/*.xml', 
-		// 		unHealthy: ''
-		//jacoco exclusionPattern: '**/*Test*.class'
+		findbugs 	canComputeNew: false, 
+					defaultEncoding: '', 
+					excludePattern: '', 
+					healthy: '', 
+					includePattern: '', 
+					pattern: '**/build/reports/findbugs/findbugs*.xml', 
+					unHealthy: ''
+		pmd 	canComputeNew: false, 
+				defaultEncoding: '', 
+				healthy: '', 
+				pattern: '**/build/reports/pmd/*.xml', 
+				unHealthy: ''
+		dry 	canComputeNew: false, 
+				defaultEncoding: '', 
+				healthy: '', 
+				pattern: '**/build/reports/pmd/cpd/*.xml', 
+				unHealthy: ''
+		jacoco 	exclusionPattern: '**/*Test*.class'
 	}
 
 	stage('Archive build output') {
