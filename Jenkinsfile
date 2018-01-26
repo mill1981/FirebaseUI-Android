@@ -9,7 +9,7 @@ node('master') {
 	stage('Gradle Build') {
 		gradle 'assembleDebug check jacocoTestReport'
 	}
-	stage('Publishing Reports) {
+	stage('Publishing Reports') {
 		androidLint canComputeNew: false, 
 					defaultEncoding: '', 
 					healthy: '', 
