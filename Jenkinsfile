@@ -6,9 +6,11 @@ node('master') {
 	stage('Sync Source Code') {
 		checkout scm
 	}
+
 	stage('Gradle Build') {
 		gradle 'assembleDebug check jacocoTestReport'
 	}
+
 	stage('Publishing Reports') {
 		androidLint canComputeNew: false, 
 					defaultEncoding: '', 
@@ -37,10 +39,10 @@ node('master') {
 				healthy: '', 
 				pattern: '**/build/reports/pmd/cpd/*.xml', 
 				unHealthy: ''
-		jacoco()
+		//jacoco exclusionPattern: '**/*Test*.class'
 	}
+
 	stage('Archive build output') {
-		archive allowEmptyArchive: true,
-			artifacts: '**/*.apk'
+		archive artifacts: '**/*.apk'
 	}
 }
