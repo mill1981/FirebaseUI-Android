@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "295971614234",
+    "firebase_url": "https://catch-live-wallpaper.firebaseio.com",
+    "project_id": "catch-live-wallpaper",
+    "storage_bucket": "catch-live-wallpaper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295971614234:android:2bd2938ff353bfd7",
+        "android_client_info": {
+          "package_name": "do.fifipapa.catchlivewallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295971614234-83qgi91ln0ki5q8rfkn9bkdj7kvb81n6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "do.fifipapa.catchlivewallpaper",
+            "certificate_hash": "3f45ad07061335f2ec983e0f88568802f9cb1c67"
+          }
+        },
+        {
+          "client_id": "295971614234-h2vg39bkarun9apgcuahplnst9d68aas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB45xURcK3wHyk-qhuIU83E1peUFfATfNM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295971614234-h2vg39bkarun9apgcuahplnst9d68aas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295971614234:android:75107ea54d59a5de",
+        "android_client_info": {
+          "package_name": "do.fifipapa.gachagame.livewallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295971614234-0v8nbo21bdspv69ttl3dohr8np9l6hgv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "do.fifipapa.gachagame.livewallpaper",
+            "certificate_hash": "3f45ad07061335f2ec983e0f88568802f9cb1c67"
+          }
+        },
+        {
+          "client_id": "295971614234-h2vg39bkarun9apgcuahplnst9d68aas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB45xURcK3wHyk-qhuIU83E1peUFfATfNM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295971614234-h2vg39bkarun9apgcuahplnst9d68aas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295971614234:android:91eecf4730fc920b",
+        "android_client_info": {
+          "package_name": "com.firebase.uidemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295971614234-4u1adb8l8t5r0gkpcapnu3at53djq6c4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebase.uidemo",
+            "certificate_hash": "3f45ad07061335f2ec983e0f88568802f9cb1c67"
+          }
+        },
+        {
+          "client_id": "295971614234-h2vg39bkarun9apgcuahplnst9d68aas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB45xURcK3wHyk-qhuIU83E1peUFfATfNM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295971614234-h2vg39bkarun9apgcuahplnst9d68aas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
