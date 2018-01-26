@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
+//apply from: '../jacoco.gradle'
 apply from: '../library/quality/quality.gradle'
+
+apply plugin: 'jacoco'
 
 android {
     compileSdkVersion compileSdk
@@ -29,6 +32,11 @@ android {
     testOptions {
         unitTests {
             includeAndroidResources true
+        }
+        unitTests.all {
+            jacoco {
+                includeNoLocationClasses = true
+            }
         }
     }
 }
@@ -63,3 +71,22 @@ dependencies {
 javadoc.include([
         'com/google/firebase/auth/**'
 ])
+
+
+
+task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
+
+    reports {
+        xml.enabled = true
+        html.enabled = true
+        html.destination "${buildDir}/reports/jacoco"
+    }
+
+    def fileFilter = ['**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*', '**/*Test*.*', 'android/**/*.*']
+    def debugTree = fileTree(dir: "${buildDir}/intermediates/classes/debug", excludes: fileFilter)
+    def mainSrc = "${project.projectDir}/src/main/java"
+
+    sourceDirectories = files([mainSrc])
+    classDirectories = files([debugTree])
+    executionData = files("${buildDir}/jacoco/testDebugUnitTest.exec")
+}

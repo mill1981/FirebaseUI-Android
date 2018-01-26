@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+//apply from: '../jacoco.gradle'
 apply from: '../library/quality/quality.gradle'
 check.dependsOn 'compileDebugAndroidTestJavaWithJavac'
 
@@ -12,6 +13,16 @@ android {
         versionName version
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    buildTypes { 
+        debug { 
+            testCoverageEnabled = true 
+        } 
+        release { 
+            testCoverageEnabled = true 
+        } 
+         
+    } 
 }
 
 dependencies {
