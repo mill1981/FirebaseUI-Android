@@ -41,6 +41,6 @@ node('master') {
 	}
 	stage('Archive build output') {
 		archive allowEmptyArchive: true,
-				artifacts: '**/*.apk,**/mapping.txt'
+			artifacts: '**/*.apk'
 	}
 }
