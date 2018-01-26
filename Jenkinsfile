@@ -43,6 +43,6 @@ node('master') {
 	}
 
 	stage('Archive build output') {
-		archive artifacts: '**/*.apk'
+		archive '**/*.apk'
 	}
 }
