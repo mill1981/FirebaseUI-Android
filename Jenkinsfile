@@ -3,6 +3,13 @@ def gradle(command) {
 }
 
 node('master') {
-	checkout scm
-	gradle 'assembleDebug check jacocoTestReport'
+	stage('Sync Source Code') {
+		checkout scm
+	}
+	stage('Gradle Build') {
+		gradle 'assembleDebug check jacocoTestReport'
+	}
+	stage('Archive build output') {
+		archive '**/*.apk'
+	}
 }
